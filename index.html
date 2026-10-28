@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="timer-container">
+        <div class="timer-icon">⏱️</div>
+
+        <h1>Countdown Timer</h1>
+        <p class="subtitle">Make every second count.</p>
+
+        <div class="timer-display" id="timer">00:00:00</div>
+
+        <div class="inputs">
+            <div class="input-group">
+                <label for="hours">Hours</label>
+                <input type="number" id="hours" min="0" max="999"
+                    value="0">
+            </div>
+
+            <div class="input-group">
+                <label for="minutes">Minutes</label>
+                <input type="number" id="minutes" min="0" max="59"
+                    value="5">
+            </div>
+
+            <div class="input-group">
+                <label for="seconds">Seconds</label>
+                <input type="number" id="seconds" min="0" max="59"
+                    value="0">
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="startBtn" class="start-btn">▶ Start</button>
+            <button id="pauseBtn" class="pause-btn">⏸ Pause</button>
+            <button id="resetBtn" class="reset-btn">↻ Reset</button>
+        </div>
+
+        <p id="message" role="status" aria-live="polite">
+            Ready to start?
+        </p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
